@@ -14,5 +14,5 @@ template '/etc/python/requirements.txt' do
   source 'requirements.txt'
 end
 execute 'pip install' do
-  command 'pip install -r /etc/python/requirements.txt'
+  command 'pip install -v -r /etc/python/requirements.txt'
 end
