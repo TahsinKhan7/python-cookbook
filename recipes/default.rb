@@ -10,9 +10,9 @@ end
 package 'python-pip' do
   action [:install, :upgrade]
 end
-template '/etc/python/requirements.txt' do
+template '/etc/python_cookbook/requirements.txt' do
   source 'requirements.txt'
 end
 execute 'pip install' do
-  command 'pip install -v -r /etc/python/requirements.txt'
+  command 'pip install -v -r /etc/python_cookbook/requirements.txt'
 end
