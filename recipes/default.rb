@@ -4,15 +4,19 @@
 apt_update 'update' do
   action :update
 end
-package 'python' do
+
+package 'python3' do
   action [:install, :upgrade]
 end
+
 package 'python-pip' do
   action [:install, :upgrade]
 end
-template '/etc/python/requirements.txt' do
+
+template '/etc/python3/requirements.txt' do
   source 'requirements.txt'
 end
+
 execute 'pip install' do
-  command 'pip install -v -r /etc/python/requirements.txt'
+  command 'pip install -r /etc/python3/requirements.txt'
 end

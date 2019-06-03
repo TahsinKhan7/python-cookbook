@@ -20,11 +20,11 @@ describe 'python_cookbook::default' do
     end
 
     it 'if python installed' do
-      expect(chef_run).to install_package('python')
+      expect(chef_run).to install_package('python3')
     end
 
     it 'if python updated successfully' do
-      expect(chef_run).to upgrade_package ('python')
+      expect(chef_run).to upgrade_package ('python3')
     end
 
     it 'if python pip has installed' do
@@ -36,7 +36,7 @@ describe 'python_cookbook::default' do
     end
 
     it 'if a template folder with requirments.txt file has been created correctly' do
-      expect(chef_run).to create_template("/etc/python/requirements.txt")
+      expect(chef_run).to create_template("/etc/python3/requirements.txt")
     end
 
     at_exit { ChefSpec::Converge.report! }
