@@ -3,8 +3,8 @@
 How to use this cookbook:
 
 1. Ensure your berksfile for your project contains the following code:
-
-    cookbook 'python_cookbook', git: 'https://github.com/TahsinKhan7/python-cookbook.git'
+            
+            cookbook 'python_cookbook', git: 'https://github.com/TahsinKhan7/python-cookbook.git'
     
 2. Navigate to the project on your terminal
 
