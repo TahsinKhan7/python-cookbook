@@ -1,5 +1,7 @@
 # python_cookbook
 
+This is a python cookbook to install python and pip for chef projects.
+
 How to use this cookbook:
 
 1. Ensure your berksfile for your project contains the following code:
@@ -11,3 +13,4 @@ How to use this cookbook:
 3. Run Berks Vendor Cookbooks on terminal
 
 This will install the cookbook in your Chef project.
+
